@@ -1,5 +1,6 @@
 package vn.its.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import vn.its.model.Student;
 import vn.its.repository.StudentRepository;
 
@@ -7,6 +8,7 @@ import java.util.List;
 
 public class StudentServiceImpl implements StudentService {
 
+    @Autowired
     private StudentRepository studentRepository;
 
     public StudentServiceImpl() {

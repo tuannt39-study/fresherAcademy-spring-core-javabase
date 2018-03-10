@@ -12,10 +12,15 @@ public class ApplicationConfiguration {
 
     @Bean("studentService")
     public StudentService getStudentService(){
-        StudentServiceImpl service = new StudentServiceImpl();
-        service.setStudentRepository(getStudentRepository());
-        return service;
+        return new StudentServiceImpl();
     }
+
+//    @Bean("studentService")
+//    public StudentService getStudentService(){
+//        StudentServiceImpl service = new StudentServiceImpl();
+//        service.setStudentRepository(getStudentRepository());
+//        return service;
+//    }
 
     @Bean("studentRepository")
     public StudentRepository getStudentRepository(){

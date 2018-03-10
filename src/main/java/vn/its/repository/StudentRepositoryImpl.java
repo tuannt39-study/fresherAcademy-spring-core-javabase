@@ -5,7 +5,8 @@ import vn.its.model.Student;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentRepositoryImpl {
+public class StudentRepositoryImpl implements StudentRepository {
+    @Override
     public List<Student> getAllStudent(){
         List<Student> studentList = new ArrayList<>();
         studentList.add(new Student("nguyen", "ha noi"));
